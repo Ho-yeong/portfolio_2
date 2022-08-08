@@ -1,4 +1,24 @@
 {
   "hello": "Hello",
-  "intro_title": "Full-stack Web & Game Developer"
+  "intro_title": "Full-stack Web & Game Developer",
+  "intro_desc_1": "“If you do what is Easy, Life will be Hard",
+  "intro_desc_2": "But, If you do what is Hard, Life will be Easy.”",
+  "contact": "Contact Info",
+  "address": "Gangnam, Seoul, South Korea",
+  "expertise": "My Experties",
+  "timeline": "Time Line",
+  "vic_job": "Back Office / Web / Part Leader",
+  "vic_loca": "Gangnam, Seoul",
+  "vic_manage_tool": "Back Office Tool",
+  "vic_manage_tool_desc": "Manage user info",
+  "vic_manage_tool_desc_2": "Check game log",
+  "vic_brand": "Brand Site",
+  "vic_brand_desc": "Game promotion Site",
+  "vic_brand_desc_2": "Manage pre-register",
+  "vic_inhouse": "In-house System",
+  "vic_inhouse_desc": "Manage attendance",
+  "vic_inhouse_desc_2": "Manage meeting room",
+  "vic_inhouse_desc_3": "Kakowork bot",
+  "vic_desc": "Nestjs, Nextjs Full stack development",
+  "vic_desc_2": "Multilingual support"
 }

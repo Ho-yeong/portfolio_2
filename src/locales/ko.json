@@ -1,4 +1,24 @@
 {
   "hello": "안녕",
-  "intro_title": "풀스택 웹 & 게임 개발자"
+  "intro_title": "풀스택 웹 & 게임 개발자",
+  "intro_desc_1": "“쉬운것만 한다면 삶은 어려워지고",
+  "intro_desc_2": "어려운것을 한다면 삶은 쉬워진다”",
+  "contact": "연락처",
+  "address": "강남, 서울, 대한민국",
+  "expertise": "주요 스택",
+  "timeline": "타임라인",
+  "vic_job": "운영툴 / 웹 / 파트장",
+  "vic_loca": "서울, 강남",
+  "vic_manage_tool": "운영툴",
+  "vic_manage_tool_desc": "유저 정보 관리",
+  "vic_manage_tool_desc_2": "게임 로그 조회",
+  "vic_brand": "브랜드 사이트",
+  "vic_brand_desc": "게임 홍보 사이트",
+  "vic_brand_desc_2": "게임 사전예약 관리",
+  "vic_inhouse": "사내 시스템",
+  "vic_inhouse_desc": "출퇴근 관리",
+  "vic_inhouse_desc_2": "회의실 예약 관리",
+  "vic_inhouse_desc_3": "카카오워크 봇 연동",
+  "vic_desc": "Nestjs, Nextjs 풀스택 개발",
+  "vic_desc_2": "다국어 지원"
 }

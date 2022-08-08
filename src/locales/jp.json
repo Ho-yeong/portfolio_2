@@ -1,4 +1,24 @@
 {
   "hello": "こんにちは",
-  "intro_title": "Full-stack Web & Game Developer"
+  "intro_title": "フルスタックのWeb & ゲーム開発者",
+  "intro_desc_1": "“簡単なことをすれば人生は大変だ",
+  "intro_desc_2": "しかし、大変なことをすれば、人生は簡単になる”",
+  "contact": "連絡先",
+  "address": "江南, ソウル, 韓国",
+  "expertise": "主要スタック",
+  "timeline": "タイムライン",
+  "vic_job": "運営ツール / ウェブ / パート長",
+  "vic_loca": "江南, ソウル",
+  "vic_manage_tool": "運営ツール",
+  "vic_manage_tool_desc": "ユーザー情報管理",
+  "vic_manage_tool_desc_2": "ゲームログ照会",
+  "vic_brand": "ブランドサイト",
+  "vic_brand_desc": "ゲーム広報サイト",
+  "vic_brand_desc_2": "ゲーム事前予約管理",
+  "vic_inhouse": "社内システム",
+  "vic_inhouse_desc": "通勤管理",
+  "vic_inhouse_desc_2": "会議室予約管理",
+  "vic_inhouse_desc_3": "カカオワークボット連動",
+  "vic_desc": "Nestjs,Nextjsフルスタック開発",
+  "vic_desc_2": "多言語対応"
 }

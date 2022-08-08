@@ -13,6 +13,15 @@ const GlobalStyle = createGlobalStyle`
       body {
         background: linear-gradient(#2b1055, #7597de);
       }
+
+      @keyframes blink{
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
 `;
 
 export default GlobalStyle;

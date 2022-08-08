@@ -14,7 +14,7 @@ const I = {
   Container: styled.article`
     max-width: 1140px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 100px 0;
   `,
   Title: styled.div`
     padding: 20px 0;
@@ -35,16 +35,28 @@ const I = {
   `,
   Contents: styled.div``,
   Text: styled.div`
+    font-size: 22px;
+    line-height: 32px;
+
     &.title {
       font-size: 42px;
       font-weight: 700;
-      margin-bottom: 40px;
+      height: 80px;
+    }
+
+    &.desc {
+      margin-top: 70px;
+    }
+
+    &.desc > p:nth-child(2) {
+      margin-left: 50px;
     }
   `,
 };
 
 const Introduce: React.FC = () => {
   const { t } = useTranslation();
+
   return (
     <I.Wrapper>
       <I.Container>
@@ -55,14 +67,29 @@ const Introduce: React.FC = () => {
           <I.Contents>
             <I.Text className="title">
               <TypingEffect
-                text={['Full-stack Web & Game Developer']}
-                speed={60}
-                eraseDelay={12000}
-                eraseSpeed={80}
+                text={[`${t('intro_title')}`]}
+                speed={45}
+                eraseDelay={18000}
+                eraseSpeed={70}
                 typingDelay={500}
               />
             </I.Text>
-            <I.Text>어쩌고 저쩌고</I.Text>
+            <I.Text>I'm currently located in Seoul</I.Text>
+            <I.Text>
+              <TypingEffect
+                staticText={'Speciallized in'}
+                text={['Node.js', 'React', 'Go']}
+                speed={40}
+                typingDelay={50}
+                eraseSpeed={35}
+                eraseDelay={3500}
+              />
+            </I.Text>
+
+            <I.Text className="desc">
+              <p>{t('intro_desc_1')}</p>
+              <p>{t('intro_desc_2')}</p>
+            </I.Text>
           </I.Contents>
         </I.Title>
       </I.Container>

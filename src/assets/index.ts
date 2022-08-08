@@ -11,3 +11,7 @@ export { default as LogoWhite } from './logos_white.png';
 export { default as LogoBlack } from './logos_black.png';
 export { default as GitHub } from './github.png';
 export { default as LinkedIn } from './linkedin.png';
+
+// gun
+// @ts-ignore
+export { default as Gun } from './gun.glb';

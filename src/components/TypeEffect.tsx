@@ -37,7 +37,11 @@ const TypingEffect: React.FC<ITypeEffect> = ({
             <h1>
               {text.split('').map((char, i) => {
                 const key = `${i}`;
-                return <span key={key}>{char}</span>;
+                return (
+                  <span key={key} style={{ fontWeight: 700 }}>
+                    {char}
+                  </span>
+                );
               })}
             </h1>
           );
