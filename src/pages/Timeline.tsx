@@ -97,14 +97,13 @@ const Timeline: React.FC = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             contentStyle={{ background: 'rgb(255, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(255, 150, 243)' }}
             date="2021.08"
             iconStyle={{ background: 'rgb(255, 150, 243)', color: '#fff' }}
             icon={<MdOutlineSchool />}
           >
-            <I.Job>Computer Science degree</I.Job>
-            <I.Company>bank</I.Company>
-            <I.Desc>이것 저것</I.Desc>
+            <I.Job>{t('school_degree')}</I.Job>
+            <I.Company>{t('school_name')}</I.Company>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -113,24 +112,23 @@ const Timeline: React.FC = () => {
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<HiOutlineOfficeBuilding />}
           >
-            <I.Job>Back Office / Game Server</I.Job>
+            <I.Job>{t('treenod_job')}</I.Job>
             <I.Company>Treenod</I.Company>
-            <I.Location>Hae-un-dae, Busan</I.Location>
-            <I.Desc className="title">운영툴</I.Desc>
-            <I.Desc className="title">게임 서버</I.Desc>
-            <I.Desc>Golang 웹 기반 게임 컨텐츠 개발</I.Desc>
-            <I.Desc>Gin 프레임워크</I.Desc>
+            <I.Location>{t('treenod_loca')}</I.Location>
+            <I.Desc className="title">{t('vic_manage_tool')}</I.Desc>
+            <I.Desc className="title">{t('treenod_gameserver')}</I.Desc>
+            <I.Desc>{t('treenod_game_desc_1')}</I.Desc>
+            <I.Desc>{t('treenod_game_desc_2')}</I.Desc>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             contentStyle={{ background: 'rgb(255, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(255, 150, 243)' }}
             date="2020.01 - 2020.08"
             iconStyle={{ background: 'rgb(255, 150, 243)', color: '#fff' }}
             icon={<MdOutlineSchool />}
           >
-            <I.Job>마이크로 서비스 기반 웹 개발자 양성</I.Job>
-            <I.Company>KG 아이티뱅크</I.Company>
-            <I.Desc>이것 저것</I.Desc>
+            <I.Job>{t('academy_name')}</I.Job>
+            <I.Company>{t('academy_desc')}</I.Company>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </T.Container>

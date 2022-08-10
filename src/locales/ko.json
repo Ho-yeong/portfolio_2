@@ -1,10 +1,9 @@
 {
-  "hello": "안녕",
   "intro_title": "풀스택 웹 & 게임 개발자",
   "intro_desc_1": "“쉬운것만 한다면 삶은 어려워지고",
   "intro_desc_2": "어려운것을 한다면 삶은 쉬워진다”",
   "contact": "연락처",
-  "address": "강남, 서울, 대한민국",
+  "address": "대한민국, 서울, 강남",
   "expertise": "주요 스택",
   "timeline": "타임라인",
   "vic_job": "운영툴 / 웹 / 파트장",
@@ -20,5 +19,14 @@
   "vic_inhouse_desc_2": "회의실 예약 관리",
   "vic_inhouse_desc_3": "카카오워크 봇 연동",
   "vic_desc": "Nestjs, Nextjs 풀스택 개발",
-  "vic_desc_2": "다국어 지원"
+  "vic_desc_2": "다국어 지원",
+  "school_name": "학점은행제",
+  "school_degree": "컴퓨터과학과 학사",
+  "academy_name": "마이크로 서비스 기반 웹 개발자 양성",
+  "academy_desc": "KG아이티뱅크 / 수석 수료",
+  "treenod_job": "운영툴 / 게임 서버",
+  "treenod_loca": "부산, 해운대",
+  "treenod_gameserver": "게임 서버",
+  "treenod_game_desc_1": "Golang 웹 기반 게임 컨텐츠 개발",
+  "treenod_game_desc_2": "Gin 프레임워크 사용"
 }

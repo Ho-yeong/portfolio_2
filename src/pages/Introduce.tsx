@@ -82,7 +82,7 @@ const Introduce: React.FC = () => {
                 speed={40}
                 typingDelay={50}
                 eraseSpeed={35}
-                eraseDelay={3500}
+                eraseDelay={2500}
               />
             </I.Text>
 

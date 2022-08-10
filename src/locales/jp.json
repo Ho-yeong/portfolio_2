@@ -1,5 +1,4 @@
 {
-  "hello": "こんにちは",
   "intro_title": "フルスタックのWeb & ゲーム開発者",
   "intro_desc_1": "“簡単なことをすれば人生は大変だ",
   "intro_desc_2": "しかし、大変なことをすれば、人生は簡単になる”",
@@ -20,5 +19,14 @@
   "vic_inhouse_desc_2": "会議室予約管理",
   "vic_inhouse_desc_3": "カカオワークボット連動",
   "vic_desc": "Nestjs,Nextjsフルスタック開発",
-  "vic_desc_2": "多言語対応"
+  "vic_desc_2": "多言語対応",
+  "school_name": "The Academic Credit Bank System",
+  "school_degree": "コンピュータサイエンス学士",
+  "academy_name": "マイクロサービスに基づくWeb開発者のトレーニング",
+  "academy_desc": "韓国政府の雇用支援プログラム",
+  "treenod_job": "アドミンツール / ゲームサーバー",
+  "treenod_loca": "釜山, 海雲台",
+  "treenod_gameserver": "ゲームサーバー",
+  "treenod_game_desc_1": "Golangウェブベースのゲームコンテンツ開発",
+  "treenod_game_desc_2": "Ginフレームワーク使用"
 }

@@ -87,6 +87,9 @@ const T = {
     --rotateY: 0;
     --angle: 12deg;
 
+    --rotateX: calc(var(--angle) * -1);
+    --rotateY: var(--angle);
+
     grid-column: 1 / -1;
     grid-row: 1 / -1;
 

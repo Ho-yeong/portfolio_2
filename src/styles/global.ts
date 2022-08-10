@@ -22,6 +22,43 @@ const GlobalStyle = createGlobalStyle`
           opacity: 0;
         }
       }
+
+
+      @keyframes fadeIn{
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes leftRock{
+        0% {
+          transform: translateX(-1000px);
+        }
+        100% {
+          transform: translateX(-20px);
+        }
+      }
+
+      @keyframes rightRock{
+        0% {
+          transform: translateX(1000px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+
+      @keyframes behindRock{
+        0% {
+          transform: translateY(1000px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
 `;
 
 export default GlobalStyle;

@@ -1,6 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { GitHub, Moon, MountainsBehind, MountainsFront, Stars, LinkedIn } from '../assets';
+import {
+  GitHub,
+  Moon,
+  MountainsBehind,
+  MountainsFront,
+  Stars,
+  LinkedIn,
+  MountainLeft,
+  MountainRight,
+} from '../assets';
 import TypingEffect from '../components/TypeEffect';
 
 const T = {
@@ -35,11 +44,26 @@ const T = {
   `,
   Moon: styled.img`
     mix-blend-mode: screen;
+    transform: translateY(1000px);
+    animation: behindRock 1.3s cubic-bezier(0.13, 0, 0, 1.2) 1.3s forwards;
   `,
   Stars: styled.img``,
-  MountainBehind: styled.img``,
+  MountainBehind: styled.img`
+    transform: translateY(1000px);
+    animation: behindRock 1.2s cubic-bezier(0.13, 0, 0.23, 1.14) forwards;
+  `,
   MountainFront: styled.img`
     z-index: 10;
+
+    &.left {
+      transform: translateX(-1000px);
+      animation: leftRock 1.2s cubic-bezier(0.13, 0, 0.23, 1.14) 0.3s forwards;
+    }
+
+    &.right {
+      transform: translateX(1000px);
+      animation: rightRock 1.2s cubic-bezier(0.13, 0, 0.23, 1) 0.7s forwards;
+    }
   `,
   Text: styled.div`
     position: absolute;
@@ -62,6 +86,9 @@ const T = {
     color: #2b1055;
     z-index: 11;
     transform: translateY(100px);
+    opacity: 0;
+
+    animation: fadeIn 0.8s cubic-bezier(0.13, 0, 0.23, 1) 1.4s forwards;
 
     @media (max-width: 450px) {
       padding: 4px 12px;
@@ -93,7 +120,6 @@ const T = {
 const Top: React.FC = () => {
   const starRef = useRef<HTMLImageElement>(null);
   const moonRef = useRef<HTMLImageElement>(null);
-  const frontRef = useRef<HTMLImageElement>(null);
   const behindRef = useRef<HTMLImageElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLDivElement>(null);
@@ -105,14 +131,12 @@ const Top: React.FC = () => {
         starRef.current &&
         moonRef.current &&
         behindRef.current &&
-        frontRef.current &&
         textRef.current &&
         buttonRef.current
       ) {
         starRef.current.style.left = `${value * 0.25}px`;
         moonRef.current.style.top = `${value * 1.05}px`;
         behindRef.current.style.top = `${value * 0.5}px`;
-        frontRef.current.style.top = `${value * 0}px`;
         textRef.current.style.marginRight = `${value * 2}px`;
         textRef.current.style.marginTop = `${value * 1.5}px`;
         buttonRef.current.style.marginTop = `${value * 1.5}px`;
@@ -131,7 +155,7 @@ const Top: React.FC = () => {
           speed={120}
           eraseDelay={10000}
           eraseSpeed={150}
-          typingDelay={0}
+          typingDelay={2000}
         />
       </T.Text>
       <T.Btn ref={buttonRef}>
@@ -142,7 +166,9 @@ const Top: React.FC = () => {
           <T.BtnImg src={LinkedIn} />
         </T.A>
       </T.Btn>
-      <T.MountainFront src={MountainsFront} ref={frontRef} />
+      <T.MountainFront src={MountainLeft} className="left" />
+      <T.MountainFront src={MountainsFront} />
+      <T.MountainFront src={MountainRight} className="right" />
     </T.Wrapper>
   );
 };

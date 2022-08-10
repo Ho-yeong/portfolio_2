@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { AiTwotonePhone, AiOutlineMail } from 'react-icons/ai';
 import { FiMapPin } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import { LogoBlack } from '../assets';
+import { LogoBlack, GitHub, LinkedIn } from '../assets';
 
 const S = {
   Wrapper: styled.footer`
@@ -44,6 +44,18 @@ const S = {
       margin-top: 30px;
     }
   `,
+  A: styled.a``,
+  Img: styled.img`
+    width: 35px;
+    height: auto;
+    margin-top: 5px;
+    margin-right: 10px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  `,
 };
 
 const Footer: React.FC = () => {
@@ -65,6 +77,12 @@ const Footer: React.FC = () => {
             <AiOutlineMail />
             <span>&nbsp; ghdud0503@gmail.com</span>
           </S.Description>
+          <S.A target="__blank" href="https://github.com/Ho-yeong">
+            <S.Img src={GitHub} />
+          </S.A>
+          <S.A target="__blank" href="https://www.linkedin.com/in/hoyeong-jo-7547351a7/">
+            <S.Img src={LinkedIn} />
+          </S.A>
         </div>
         <S.Logo src={LogoBlack} />
       </S.Container>
